@@ -1,0 +1,92 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AlphaGo_al_result</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="The River template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/styles/bootstrap-4.1.2/bootstrap.min.css' %}">
+<link href="{% static 'predict/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/plugins/OwlCarousel2-2.3.4/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/plugins/OwlCarousel2-2.3.4/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/plugins/OwlCarousel2-2.3.4/animate.css' %}">
+<link href="{% static 'predict/plugins/jquery-datepicker/jquery-ui.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'predict/plugins/colorbox/colorbox.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'predict/styles/responsive.css' %}">
+<style>
+        html, body
+    {
+        height: 100%;
+    }
+
+    body
+    {
+        display: table;
+        margin: 0 auto;
+        background-image: url("{% static 'predict/images/soccer.jpg' %}");
+        background-size: cover;
+        background-position: center center;                    
+    }
+
+    .container
+    {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        background-color: transparent
+    }
+
+    .main
+    {
+        height: 200px;
+        width: 200px;
+        background-color: blue;      
+    }
+    .ivory
+    {
+        color:ivory ;
+    }
+</style>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+        </div>
+	</header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" style="color: ivory" style="text-align: center" style="align-content: center">
+                <div class="home_content text-center" style="align-content: center" style="align-self: center" style="align-items: center">
+                    <div class="home_title" style="color: ivory"><a href="{% url 'test1' %}" style="color: ivory">2019_AlphaGo_al</a></div>
+                    <a style="font-size: 36px" style="color: ivory" style="align-content: center">오늘의 경기 결과는 {{result}}<br>
+                    {{extra}}
+                    </a>
+                    <div class="booking_input_container" style="color: ivory" style="font-size: 20px"><button class="booking_button trans_200" style="color: ivory" style="font-size: 20px"><a href="{%url 'main'%}" style="color: ivory" style="font-size: 20px">Predict Again</a></button></div>
+                </div>                   
+            </div>     
+        </div>
+    </div>
+
+    <script src="{% static 'predict/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'predict/styles/bootstrap-4.1.2/popper.js' %}"></script>
+    <script src="{% static 'predict/styles/bootstrap-4.1.2/bootstrap.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/greensock/TweenMax.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/greensock/TimelineMax.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/greensock/animation.gsap.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/OwlCarousel2-2.3.4/owl.carousel.js' %}"></script>
+    <script src="{% static 'predict/plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'predict/plugins/progressbar/progressbar.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'predict/plugins/jquery-datepicker/jquery-ui.js' %}"></script>
+    <script src="{% static 'predict/plugins/colorbox/jquery.colorbox-min.js' %}"></script>
+    <script src="{% static 'predict/js/custom.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav" >
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">AlphaGo_al</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{% url 'test1'%}">Home</a>
+      </li>
+      <!--
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Developer</a>
+      </li>
+      -->
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{% url 'member' %}">Information</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">Who we are ?</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>                <!-- 아이콘 개인 사진 혹은 단체 사진으로 변경-->
+          </span>
+          <h4>
+            <strong>신 승 윤<i class="fas fa-heart"></i></strong>
+          </h4>
+          <p class="text-faded mb-0">한국외국어대학교(글로벌) 멋쟁이사자</p>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>전 영 선<i class="fas fa-heart"></i></strong>
+          </h4>
+          <p class="text-faded mb-0">아주대학교 멋쟁이사자</p>
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>김 세 정<i class="fas fa-heart"></i></strong>
+          </h4>
+          <p class="text-faded mb-0">연세대학교 멋쟁이사자</p>
+        </div>
+        <!--ㅋㅋㅋㅋㅋㅋㅋㅋㅋ아니 이거 하트 너무 웃깁니다^^ 누가했쥐--> 
+        <!-- re: 흠냐륑 이비다-->
+        <div class="col-lg-7 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>강 동 진<i class="fas fa-heart"></i></strong>
+          </h4>
+          <p class="text-faded mb-0">연세대학교 멋쟁이사자</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>나 영 진<i class="fas fa-heart"></i></strong>
+          </h4>
+          <p class="text-faded mb-0">강남대학교 멋쟁이사자</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+</body>
+
+</html>

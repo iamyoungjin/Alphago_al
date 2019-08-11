@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AlphaGo_al</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav" >
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">AlphaGo_al</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <!--
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Developer</a>
+      </li>
+      -->
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Information</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1" style="color:beige">Alpha Go_al</h1> 
+      <h3 class="mb-5">
+        <em style="color:white">@likelion</em>   
+      </h3>
+      <a class="btn btn-warning" href="{% url 'main' %}" >승부 예측하러 가기</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">hackerton</h3>
+        <h2 class="mb-5">function</h2>
+      </div>
+      
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="{% url 'findmatch' %}">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>경기 일정</h2>
+                <p class="mb-0">경기일정을 탐색하여 보여줍니다.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'img/epl.png' %}" alt="">
+          </a>
+        </div>
+        
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="{% url 'member' %}">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>팀 원</h2>
+                <p class="mb-0">안녕하세요! 2019 중앙해커톤 @알파골 팀입니다.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'img/member.png' %}" alt="">
+          </a>
+        </div>
+        
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://calendar.naver.com/openCalendar.nhn?action=oclist&cate=1">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>프리미어리그 구독</h2>
+                <p class="mb-0">각 팀을 구독하여 정보를 받아볼 수 있습니다.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'img/numb.png' %}" alt="">
+          </a>
+        </div>
+        
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Workspace</h2>
+                <p class="mb-0">서비스 준비중입니다.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+</body>
+
+</html>
